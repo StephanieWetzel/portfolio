@@ -24,13 +24,6 @@ export class ContactMeComponent {
 
 
   constructor(private fbuilder: FormBuilder) {
-    // this.formData = this.fbuilder.group({
-    //   name: ['', [Validators.required, Validators.minLength(2)]],
-    //   email: ['', [Validators.required, Validators.email]],
-    //   message: ['', [Validators.required, Validators.minLength(4)]],
-    //   checkbox: [false, Validators.requiredTrue]
-    // });
-
 
   }
 
@@ -41,7 +34,6 @@ export class ContactMeComponent {
   post = {
     endPoint: 'https://stephanie-wetzel.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
-    // body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
         'Content-Type': 'text/plain',
@@ -56,7 +48,7 @@ export class ContactMeComponent {
       const formDataAsJSON = this.formData.getRawValue();
       const formDataAsJSONString = JSON.stringify(formDataAsJSON);
 
-      this.http.post(this.post.endPoint, formDataAsJSONString, this.post.options)
+      this.http.post(this.post.endPoint, formDataAsJSONString)
         .subscribe({
           next: (_response: any) => {
             this.formData.reset();
