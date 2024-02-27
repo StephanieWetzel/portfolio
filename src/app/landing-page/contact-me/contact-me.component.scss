@@ -1,0 +1,261 @@
+h2 {
+    font-size: 88px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.main-container {
+    padding: 200px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    gap: 56px;
+}
+
+.custom-line {
+    display: flex;
+    height: 4px;
+    width: 56px;
+    background-color: #9747FF;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 0 104px;
+    box-sizing: border-box;
+
+    >div {
+        width: 100%;
+        font-size: 18px;
+        margin-top: 32px;
+    }
+}
+
+.sub-header {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.form-container {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 32px;
+    box-sizing: border-box;
+
+    >div {
+        position: relative;
+    }
+}
+
+input,
+textarea {
+    width: 100%;
+    max-width: 682px;
+    background: transparent;
+    border: 1px solid #9747FF;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    padding: 14px 32px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: white;
+    }
+
+    &:hover {
+        border-color: #1CDAE6;
+    }
+
+    &:focus {
+        outline: none;
+        border: 1px solid #1CDAE6;
+    }
+}
+
+textarea {
+    min-height: 184px;
+    height: 184px;
+    resize: vertical;
+
+    &::-webkit-resizer {
+        background-image: url('/assets/img/custom_resizer.png');
+        background-repeat: no-repeat;
+    }
+}
+
+.invalid-text {
+    color: #E61C40;
+    font-size: 14px;
+}
+
+.green-border {
+    border: solid 1px #70E61C;
+}
+
+.red-border {
+    border: solid 1px #E61C40;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    padding: 14px 32px;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+}
+
+.green-button {
+    cursor: pointer;
+    background-color: #70E61C;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        margin: 0;
+        padding: 20px 42px;
+        background-color: #9747FF;
+    }
+}
+
+.privacy-policy-container {
+    display: flex;
+    align-items: center;
+    margin-top: -24px;
+
+    >input {
+        width: auto;
+        margin-right: 16px;
+    }
+
+    >p {
+        font-size: 16px;
+    }
+
+    >span {
+        font-size: 16px;
+    }
+}
+
+.policy-link {
+    color: #9747FF;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+/* Customize the label (the container) */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 19px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #141D2F;
+    border: 2px solid #70E61C;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #183771;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 4px;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    border: solid #70E61C;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.go-up {
+    position: absolute;
+    bottom: 88px;
+    right: 96px;
+
+    >div {
+        transition: all 125ms ease-in-out;
+        background-image: url('/assets/img/arrow_up.png');
+        height: 40px;
+        width: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+
+        &:hover {
+            background-image: url('/assets/img/arrow_up_green.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            object-fit: cover;
+        }
+    }
+}
+
+.shadow {
+    position: absolute;
+    left: -96px;
+    bottom: -280px;
+}

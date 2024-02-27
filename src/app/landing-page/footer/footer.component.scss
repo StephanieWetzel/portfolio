@@ -1,0 +1,60 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-top: 4px solid #70E61C;
+    background-color: #141D2F;
+    height: 276px;
+    padding: 0 104px;
+}
+
+.name {
+    display: flex;
+    font-size: 48px;
+    font-weight: bold;
+
+    .custom-i {
+        background: linear-gradient(to top, #ffffff 65%, #9747FF 35%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .custom-h {
+        background: linear-gradient(to right, #ffffff 35%, #70E61C 30%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.imprint-container {
+    position: relative;
+
+    a {
+        text-decoration: none;
+        transition: all 125ms ease-in-out;
+        font-size: 16px;
+    }
+}
+
+.custom-underline {
+    display: flex;
+    height: 3px;
+    width: 0;
+    background-color: #9747FF;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        width: 50px;
+    }
+}

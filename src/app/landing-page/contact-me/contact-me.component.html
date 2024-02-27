@@ -1,0 +1,111 @@
+<div class="main-container">
+    <div class="header-container">
+        <span class="custom-line"></span>
+        <h2>Contact</h2>
+    </div>
+
+    <div class="contact-container">
+        <div>
+            <span class="sub-header">Got a problem to solve?</span>
+            <p>Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to
+                your projects with my work.</p>
+            <span>Need a Frontend developer? <b>Contact me!</b></span>
+        </div>
+
+        <div class="form-container">
+            <form [formGroup]="formData" (ngSubmit)="onSubmit()">
+                <!-- name -->
+                <div>
+                    <input formControlName="name" type="text" placeholder="Your name" id="name" required [ngClass]="{'green-border': formData.get('name')?.valid,
+                        'red-border': formData.get('name')?.invalid && formData.get('name')?.touched}">
+
+                    <div *ngIf="formData.get('name')?.invalid && formData.get('name')?.touched">
+                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['required']">Your name is
+                            required</span>
+                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['minlength']">Please enter 2 or
+                            more
+                            characters</span>
+                    </div>
+
+                    <img *ngIf="formData.get('name')?.valid"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/done_symbol.png">
+
+                    <img *ngIf="formData.get('name')?.invalid && formData.get('name')?.touched"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/error_symbol.png">
+                </div>
+
+                <!-- email -->
+                <div>
+                    <input formControlName="email" type="email" placeholder="Your email" id="email" required
+                        pattern="[^@]+@[^\.]+\..+" [ngClass]="{'green-border': formData.get('email')?.valid,
+                        'red-border': formData.get('email')?.invalid && formData.get('email')?.touched}">
+
+                    <div *ngIf="formData.get('email')?.invalid && formData.get('email')?.touched">
+                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['required']">Your email
+                            address is required</span>
+                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['pattern']">Invalid email
+                            address</span>
+                    </div>
+
+                    <img *ngIf="formData.get('email')?.valid"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/done_symbol.png">
+
+                    <img *ngIf="formData.get('email')?.invalid && formData.get('email')?.touched"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/error_symbol.png">
+                </div>
+
+                <!-- message -->
+                <div>
+                    <textarea formControlName="message" placeholder="Your message" id="message" cols="30" rows="10"
+                        required
+                        [ngClass]="{'green-border': formData.get('message')?.valid,
+                        'red-border': formData.get('message')?.invalid && formData.get('message')?.touched}"></textarea>
+
+                    <div *ngIf="formData.get('message')?.invalid && formData.get('message')?.touched">
+                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['required']">Please enter
+                            your message</span>
+                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['minlength']">Please enter 4
+                            or more
+                            characters</span>
+                    </div>
+
+                    <img *ngIf="formData.get('message')?.valid"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/done_symbol.png">
+
+                    <img *ngIf="formData.get('message')?.invalid && formData.get('message')?.touched"
+                        [ngStyle]="{'position': 'absolute', 'right': '24px', 'top': '16px'}"
+                        src="assets/img/error_symbol.png">
+                </div>
+
+                <div class="privacy-policy-container">
+                    <label class="container">
+                        <input formControlName="checkbox" type="checkbox" checked="checked" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>I've read the
+                        <span class="policy-link" (click)="openPolicy()">privacy policy</span>
+                        and agree to the processing of my data as outlined.
+                    </p>
+                </div>
+
+                <!-- send -->
+                <div class="btn-container">
+                    <button [disabled]="formData.invalid" type="submit"
+                        [ngClass]="{'green-button': formData.get('name')?.valid && formData.get('email')?.valid && formData.get('message')?.valid && formData.get('checkbox')?.valid}">
+                        Send message :)
+                    </button>
+                </div>
+            </form>
+
+            <a class="go-up" href="#header">
+                <div></div>
+            </a>
+        </div>
+
+        <img class="shadow" src="assets/img/contact_shadow.png">
+    </div>

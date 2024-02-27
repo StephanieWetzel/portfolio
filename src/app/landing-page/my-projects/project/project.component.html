@@ -1,0 +1,14 @@
+<div class="main-container" [ngStyle]="{'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'}">
+    <img src={{imgPath}}>
+
+    <div>
+        <h3>{{name}}</h3>
+        <span>{{language}}</span>
+        <p>{{description}}</p>
+
+        <div>
+            <a class="live-link" href="{{live}}" target="_blank">Live test</a>
+            <a class="github-link" href="{{github}}" target="_blank">Github</a>
+        </div>
+    </div>
+</div>

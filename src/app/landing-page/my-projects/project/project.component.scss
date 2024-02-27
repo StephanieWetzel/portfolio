@@ -1,0 +1,53 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 160px 104px 0 104px;
+    gap: 80px;
+    position: relative;
+    z-index: 1;
+
+    >img {
+        width: 448px;
+        height: 272px;
+        filter: drop-shadow(2px 4px 6px black);
+    }
+}
+
+h3 {
+    font-size: 32px;
+    color: #9747FF;
+    margin-block-start: 0;
+    margin-block-end: 16px;
+}
+
+span {
+    font-size: 24px;
+    color: #70E61C;
+}
+
+p {
+    font-size: 18px;
+    margin-block-end: 2em;
+}
+
+a {
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 5px 10px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        background-color: #70E61C;
+    }
+}
+
+.live-link {
+    background-color: #9747FF;
+}
+
+.github-link {
+    border: 1px solid #70E61C;
+}

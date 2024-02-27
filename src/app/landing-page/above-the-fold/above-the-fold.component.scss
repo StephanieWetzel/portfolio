@@ -1,0 +1,141 @@
+.main-container {
+    height: 100vh;
+    background-color: #141D2F;
+    display: flex;
+    justify-content: space-between;
+
+    .bottom-form {
+        position: absolute;
+        top: 392px;
+        z-index: 3;
+        width: 100%;
+    }
+}
+
+.me {
+    width: 700px;
+    position: absolute;
+    top: -120px;
+    left: 48px;
+    z-index: 2;
+}
+
+.shadows {
+    margin-top: 160px;
+    margin-left: -64px;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    top: 256px;
+    right: 104px;
+    text-align: center;
+
+    .i-am {
+        font-size: 68px;
+        transform: rotate(-90deg);
+        margin-right: -16px;
+    }
+
+    .frontend-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .name {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .frontend-developer {
+            font-size: 68px;
+            color: #9747FF;
+        }
+    }
+}
+
+.contact-me-link {
+    position: absolute;
+    right: 320px;
+    top: 240px;
+    text-decoration: none;
+    padding: 14px 32px;
+    background-color: #70E61C;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 5px 10px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        margin: 0;
+        padding: 20px 42px;
+        background-color: #9747FF;
+    }
+}
+
+.platforms-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    gap: 40px;
+    bottom: 16px;
+    z-index: 4;
+
+    >span {
+        display: flex;
+        height: 4px;
+        width: 104px;
+        background-color: #9747FF;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    >a {
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.platform-scale {
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.25);
+    }
+}
+
+.mail-container {
+    position: relative;
+
+    .mail {
+        text-decoration: none;
+        font-size: 24px;
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            color: #70E61C;
+        }
+
+        .custom-underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            height: 3px;
+            width: 0;
+            background-color: #9747FF;
+            transition: all 200ms ease-in-out;
+        }
+
+        &:hover .custom-underline {
+            width: 35%;
+        }
+    }
+}
