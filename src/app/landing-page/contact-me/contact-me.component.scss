@@ -144,22 +144,14 @@ button {
     align-items: center;
     margin-top: -24px;
 
-    >input {
-        width: auto;
-        margin-right: 16px;
-    }
-
     >p {
-        font-size: 16px;
-    }
-
-    >span {
         font-size: 16px;
     }
 }
 
 .policy-link {
     color: #9747FF;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;

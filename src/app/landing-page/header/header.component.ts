@@ -13,9 +13,4 @@ export class HeaderComponent {
   constructor() {
 
   }
-
-
-  colorizeLinks() {
-
-  }
 }

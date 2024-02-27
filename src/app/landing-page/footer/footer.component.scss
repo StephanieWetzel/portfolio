@@ -1,6 +1,7 @@
 .main-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     position: relative;
     border-top: 4px solid #70E61C;
     background-color: #141D2F;
@@ -39,22 +40,43 @@ a {
 .imprint-container {
     position: relative;
 
-    a {
+    .imprint-link {
         text-decoration: none;
         transition: all 125ms ease-in-out;
-        font-size: 16px;
+        font-size: 18px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .custom-underline {
+            display: flex;
+            height: 3px;
+            width: 0;
+            background-color: #9747FF;
+            transition: all 125ms ease-in-out;
+
+            &:hover {
+                width: 50px;
+            }
+        }
     }
 }
 
-.custom-underline {
-    display: flex;
-    height: 3px;
-    width: 0;
-    background-color: #9747FF;
-    transition: all 125ms ease-in-out;
+.copyright-claim {
+    font-size: 24px;
+}
 
-    &:hover {
-        cursor: pointer;
-        width: 50px;
+.platforms-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    >a {
+        transition: all 125ms ease-in-out;
+
+        &:hover {
+            transform: scale(1.25);
+        }
     }
 }
