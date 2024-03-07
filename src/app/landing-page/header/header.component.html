@@ -1,5 +1,5 @@
-<nav>
-    <a href="#header">
+<nav class="main-container">
+    <a href="#">
         <div class="name">
             <span>Step</span>
             <span class="custom-h">h</span>
@@ -9,15 +9,109 @@
         </div>
     </a>
 
-    <div class="links">
-        <div>
-            <a href="#aboutMe">About me<span class="custom-underline"></span></a>
+    <div class="links-container">
+        <div class="link">
+            <a (click)="toggleLinkStyle('aboutMe')" [class.active-link]="aboutMe"
+                href="#aboutMe">{{lngService.header["aboutMe"] }}
+                <span class="custom-underline"></span>
+            </a>
+            <div [class.active-underline]="aboutMe"></div>
         </div>
-        <div>
-            <a href="#mySkills">Skills<span class="custom-underline"></span></a>
+
+        <div class="link">
+            <a (click)="toggleLinkStyle('skills')" [class.active-link]="skills" href="#mySkills">Skills
+                <span class="custom-underline"></span>
+            </a>
+            <div [class.active-underline]="skills"></div>
         </div>
-        <div>
-            <a href="#myProjects">Portfolio<span class="custom-underline"></span></a>
+
+        <div class="link">
+            <a (click)="toggleLinkStyle('portfolio')" [class.active-link]="portfolio" href="#myProjects">Portfolio
+                <span class="custom-underline"></span>
+            </a>
+            <div [class.active-underline]="portfolio"></div>
         </div>
+
+        <!-- toggle language -->
+        <div class="language-container toggle-display">
+            <div class="de-container">
+                <p (click)="changeLang('de')" [class.active-link]="isGerLang">DE</p>
+                <span class="custom-underline"></span>
+                <div [class.active-language-underline]="isGerLang"></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="en-container">
+                <p (click)="changeLang('en')" [class.active-link]="isEnLang">EN</p>
+                <span class="custom-underline"></span>
+                <div [class.active-language-underline]="isEnLang"></div>
+            </div>
+        </div>
+        <div (click)="showOverlay()" class="burger-menu-container"></div>
+    </div>
+</nav>
+
+<!-- OVERLAY -->
+<nav #overlayContainer class="overlay-container">
+    <div class="name-container">
+        <a href="#header">
+            <div class="name">
+                <span>Step</span>
+                <span class="custom-h">h</span>
+                <span>an</span>
+                <span class="custom-i">i</span>
+                <span>e</span>
+            </div>
+        </a>
+        <div (click)="hideOverlay()"></div>
+    </div>
+
+    <div class="overlay-links-container">
+        <div class="link">
+            <a (click)="toggleLinkStyle('aboutMe')" [class.active-link]="aboutMe" href="#aboutMe">{{
+                lngService.header["aboutMe"] }} <span class="custom-underline"></span>
+                <div [class.active-underline]="aboutMe"></div>
+            </a>
+        </div>
+
+        <div class="link">
+            <a (click)="toggleLinkStyle('skills')" [class.active-link]="skills" href="#mySkills">Skills
+                <span class="custom-underline"></span>
+                <div [class.active-underline]="skills"></div>
+            </a>
+        </div>
+
+        <div class="link">
+            <a (click)="toggleLinkStyle('portfolio')" [class.active-link]="portfolio" href="#myProjects">Portfolio<span
+                    class="custom-underline"></span>
+                <div [class.active-underline]="portfolio"></div>
+            </a>
+        </div>
+
+        <div class="link">
+            <a (click)="toggleLinkStyle('contact')" [class.active-link]="contact" href="#contactMe">{{
+                lngService.header["contact"] }}<span class="custom-underline"></span>
+                <div [class.active-underline]="contact"></div>
+            </a>
+        </div>
+
+        <!-- toggle language -->
+        <div class="language-container">
+            <div class="de-container">
+                <p (click)="changeLang('de')" [class.active-link]="isGerLang">DE</p>
+                <span class="custom-underline"></span>
+                <div [class.active-language-underline]="isGerLang"></div>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="en-container">
+                <p (click)="changeLang('en')" [class.active-link]="isEnLang">EN</p>
+                <span class="custom-underline"></span>
+                <div [class.active-language-underline]="isEnLang"></div>
+            </div>
+        </div>
+
     </div>
 </nav>

@@ -1,21 +1,18 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
 
-  constructor(private router: Router) {
+  constructor(public lngService: LanguageService) {
 
   }
 
-
-  // openImprint() {
-  //   this.router.navigateByUrl('/imprint');
-  // }
 }

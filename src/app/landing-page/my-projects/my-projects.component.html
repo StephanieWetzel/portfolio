@@ -4,11 +4,12 @@
         <h2>Portfolio</h2>
         <span class="long-line"></span>
     </div>
-    <span>The following is a selection of my work - let´s bring it to life!</span>
+    <span>{{ lngService.portfolio["p1"] }}</span>
 
     <app-project *ngFor="let project of myProjects; let i = index" [i]="i" [imgPath]="myProjects[i]['imgPath']"
-        [name]="myProjects[i]['name']" [language]="myProjects[i]['language']"
-        [description]="myProjects[i]['description']" [live]="myProjects[i]['live']" [github]="myProjects[i]['github']">
+        [name]="myProjects[i]['name']" [language]="myProjects[i]['language']" [live]="myProjects[i]['live']"
+        [github]="myProjects[i]['github']"
+        [description]="lngService.selectedLng.language === 'en' ? myProjects[i]['descriptionEN'] : myProjects[i]['descriptionGER']">
     </app-project>
 
     <img class="shadow-purple" src="assets/img/projects_shadow.png">

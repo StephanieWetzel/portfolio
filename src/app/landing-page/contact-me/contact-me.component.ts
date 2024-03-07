@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { RouterLink } from '@angular/router';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -25,7 +26,7 @@ export class ContactMeComponent {
 
 
 
-  constructor(private fbuilder: FormBuilder) {
+  constructor(private fbuilder: FormBuilder, public lngService: LanguageService) {
 
   }
 

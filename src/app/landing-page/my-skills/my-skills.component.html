@@ -1,54 +1,58 @@
 <div class="main-container">
-    <div class="skills-container">
-        <div>
-            <img src="assets/img/angular.png" alt="angular">
-            <span>Angular</span>
+    <div>
+        <div class="skills-container">
+            <div>
+                <img src="assets/img/angular.png" alt="angular">
+                <span>Angular</span>
+            </div>
+            <div>
+                <img src="assets/img/ts.png" alt="typescript">
+                <span>TypeScript</span>
+            </div>
+            <div>
+                <img src="assets/img/js.png" alt="javascript">
+                <span>JavaScript</span>
+            </div>
+            <div>
+                <img src="assets/img/html.png" alt="html">
+                <span>HTML</span>
+            </div>
+            <div>
+                <img src="assets/img/firebase.png" alt="firebase">
+                <span>Firebase</span>
+            </div>
+            <div>
+                <img src="assets/img/git.png" alt="git">
+                <span>GIT</span>
+            </div>
+            <div>
+                <img src="assets/img/css.png" alt="css">
+                <span>CSS</span>
+            </div>
+            <div>
+                <img src="assets/img/api.png" alt="rest-api">
+                <span>Rest-Api</span>
+            </div>
+            <div>
+                <img src="assets/img/scrum.png" alt="scrum">
+                <span>Scrum</span>
+            </div>
+            <div>
+                <img src="assets/img/material.png" alt="material design">
+                <span>Material Design</span>
+            </div>
         </div>
-        <div>
-            <img src="assets/img/ts.png" alt="typescript">
-            <span>TypeScript</span>
-        </div>
-        <div>
-            <img src="assets/img/js.png" alt="javascript">
-            <span>JavaScript</span>
-        </div>
-        <div>
-            <img src="assets/img/html.png" alt="html">
-            <span>HTML</span>
-        </div>
-        <div>
-            <img src="assets/img/firebase.png" alt="firebase">
-            <span>Firebase</span>
-        </div>
-        <div>
-            <img src="assets/img/git.png" alt="git">
-            <span>GIT</span>
-        </div>
-        <div>
-            <img src="assets/img/css.png" alt="css">
-            <span>CSS</span>
-        </div>
-        <div>
-            <img src="assets/img/api.png" alt="rest-api">
-            <span>Rest-Api</span>
-        </div>
-        <div>
-            <img src="assets/img/scrum.png" alt="scrum">
-            <span>Scrum</span>
-        </div>
-        <div>
-            <img src="assets/img/material.png" alt="material design">
-            <span>Material Design</span>
-        </div>
+
+        <a class="mobile-contact-me-link" href="#contactMe">Get in touch</a>
     </div>
 
     <div class="text-container">
         <div>
-            <h2>My skills</h2>
+            <h2>{{ lngService.skills["header"] }}</h2>
             <span class="custom-line"></span>
         </div>
 
-        <span>I have gained experience in building projects with various frontend technologies and concepts.</span>
+        <span>{{ lngService.skills["p1"] }}</span>
 
         <a href="#contactMe">Get in touch</a>
     </div>

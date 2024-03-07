@@ -7,15 +7,18 @@
 
 .skills-container {
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     gap: 56px;
     padding-right: 120px;
     z-index: 1;
+    position: relative;
 
     >div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         >img {
             -webkit-animation-duration: 0.75s;
@@ -90,7 +93,7 @@ h2 {
 .shadow {
     position: absolute;
     left: 0;
-    top: 218%;
+    top: 195%;
 }
 
 
@@ -117,5 +120,124 @@ h2 {
         -webkit-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
         transform: translateY(-15px)
+    }
+}
+
+.mobile-contact-me-link {
+    text-decoration: none;
+    padding: 14px 32px;
+    background-color: #70E61C;
+    border-radius: 10px;
+    font-size: 24px;
+    margin: 5px 10px;
+    transition: all 125ms ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        margin: 0;
+        padding: 20px 42px;
+        background-color: #9747FF;
+    }
+}
+
+
+// media queries
+
+@media(min-width: 1100px) {
+    .mobile-contact-me-link {
+        display: none;
+    }
+}
+
+@media(min-width: 800px) and (max-width: 1100px) {
+    .main-container {
+        padding: 80px 104px;
+        flex-direction: column-reverse;
+        gap: 48px;
+        text-align: center;
+        position: relative;
+    }
+
+    .skills-container {
+        padding-right: 0;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+
+    .text-container {
+        margin-right: 0;
+
+        >a {
+            display: none;
+        }
+    }
+
+    .shadow {
+        top: 56%;
+        left: 0;
+        width: 264px;
+    }
+}
+
+
+@media(min-width: 320px) and (max-width: 800px) {
+    .main-container {
+        padding: 80px 32px;
+        flex-direction: column-reverse;
+        gap: 48px;
+        text-align: center;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .shadow {
+        top: 64%;
+        left: -8%;
+        width: 264px;
+    }
+
+    .skills-container {
+        padding-right: 0;
+        justify-content: center;
+        padding-bottom: 56px;
+
+        >div {
+            width: 40px;
+
+            >img {
+                width: 40px;
+
+            }
+        }
+    }
+
+    .text-container {
+        margin-right: 0;
+
+        >a {
+            display: none;
+        }
+
+        >span {
+            font-size: 16px;
+        }
+
+        .custom-line {
+            width: 24px;
+        }
+    }
+
+    .mobile-contact-me-link {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media(min-width: 500px) {
+    h2 {
+        font-size: 64px;
     }
 }

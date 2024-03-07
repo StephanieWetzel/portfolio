@@ -1,25 +1,14 @@
 <div class="main-container">
     <div class="about-me-text">
-        <h2>About me</h2>
-        <span>Hi there! I am a Front-end developer based in Gefrees, Germany. Since the age of 17 I have faced various
-            challenges in my work as an office management assistant as well as in further educations, but my fascination
-            for the world of
-            programming has persisted throughout those years. This is why, in early 2023, I decided to quit thinking
-            and start doing by signing up for a boot camp at the Developer Akademie in Munich - it was time to turn my
-            visions into reality!</span>
+        <h2>{{ lngService.aboutMe["header"] }}</h2>
+        <span>{{ lngService.aboutMe["p1"] }}</span>
         <div class="personal-things">
             <img class="lightbulb" src="assets/img/lightbulb.png" alt="lightbulb">
-            <span>Through the academy´s practical-oriented approach I was able to continuously improve my programming
-                skills by crafting various web-apps and websites - by myself as well as in a team. The challenges I
-                faced during this time have become my source of motivation and every success - no matter how great - has
-                further invoked my passion for this field.</span>
+            <span>{{ lngService.aboutMe["p2"] }}</span>
         </div>
         <div class="personal-things">
             <img src="assets/img/puzzlepiece.png" alt="puzzlepiece">
-            <span>Working in the textile industry since 2021 has only further improved my organization skills, as it
-                involves managing diverse inputs daily - such as color, size, material and textile types. This
-                experience has
-                equipped me with the systematic approach necessary for handling complex projects.</span>
+            <span>{{ lngService.aboutMe["p3"] }}</span>
         </div>
     </div>
 

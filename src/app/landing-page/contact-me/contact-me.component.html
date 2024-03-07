@@ -1,30 +1,31 @@
 <div class="main-container">
     <div class="header-container">
         <span class="custom-line"></span>
-        <h2>Contact</h2>
+        <h2>{{ lngService.contact["header"]}}</h2>
     </div>
 
     <div class="contact-container">
         <div>
-            <span class="sub-header">Got a problem to solve?</span>
-            <p>Contact me through this form. I am interested in hearing from you, knowing your ideas and contributing to
-                your projects with my work.</p>
-            <span>Need a Frontend developer? <b>Contact me!</b></span>
+            <span class="sub-header">{{ lngService.contact["p1"]}}</span>
+            <p>{{ lngService.contact["p2"]}}</p>
+            <span>{{ lngService.contact["p3"]}} <b>{{ lngService.contact["p3bold"]}}</b></span>
         </div>
 
         <div class="form-container">
             <form [formGroup]="formData" (ngSubmit)="onSubmit()">
                 <!-- name -->
                 <div>
-                    <input formControlName="name" type="text" placeholder="Your name" id="name" required [ngClass]="{'green-border': formData.get('name')?.valid,
+                    <input formControlName="name" type="text" placeholder="{{ lngService.contact['placeholder1'] }}"
+                        id="name" required [ngClass]="{'green-border': formData.get('name')?.valid,
                         'red-border': formData.get('name')?.invalid && formData.get('name')?.touched}">
 
                     <div *ngIf="formData.get('name')?.invalid && formData.get('name')?.touched">
-                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['required']">Your name is
-                            required</span>
-                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['minlength']">Please enter 2 or
-                            more
-                            characters</span>
+                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['required']">
+                            {{ lngService.contact['warn1'] }}
+                        </span>
+                        <span class="invalid-text" *ngIf="formData.get('name')?.errors?.['minlength']">
+                            {{ lngService.contact['warnRequire1'] }}
+                        </span>
                     </div>
 
                     <img *ngIf="formData.get('name')?.valid"
@@ -38,15 +39,17 @@
 
                 <!-- email -->
                 <div>
-                    <input formControlName="email" type="email" placeholder="Your email" id="email" required
-                        pattern="[^@]+@[^\.]+\..+" [ngClass]="{'green-border': formData.get('email')?.valid,
+                    <input formControlName="email" type="email" placeholder="{{ lngService.contact['placeholder2'] }}"
+                        id="email" required pattern="[^@]+@[^\.]+\..+" [ngClass]="{'green-border': formData.get('email')?.valid,
                         'red-border': formData.get('email')?.invalid && formData.get('email')?.touched}">
 
                     <div *ngIf="formData.get('email')?.invalid && formData.get('email')?.touched">
-                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['required']">Your email
-                            address is required</span>
-                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['pattern']">Invalid email
-                            address</span>
+                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['required']">
+                            {{ lngService.contact['warn2'] }}
+                        </span>
+                        <span class="invalid-text" *ngIf="formData.get('email')?.errors?.['pattern']">
+                            {{ lngService.contact['warnRequire2'] }}
+                        </span>
                     </div>
 
                     <img *ngIf="formData.get('email')?.valid"
@@ -60,17 +63,18 @@
 
                 <!-- message -->
                 <div>
-                    <textarea formControlName="message" placeholder="Your message" id="message" cols="30" rows="10"
-                        required
+                    <textarea formControlName="message" placeholder="{{ lngService.contact['placeholder3'] }}"
+                        id="message" cols="30" rows="10" required
                         [ngClass]="{'green-border': formData.get('message')?.valid,
                         'red-border': formData.get('message')?.invalid && formData.get('message')?.touched}"></textarea>
 
                     <div *ngIf="formData.get('message')?.invalid && formData.get('message')?.touched">
-                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['required']">Please enter
-                            your message</span>
-                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['minlength']">Please enter 4
-                            or more
-                            characters</span>
+                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['required']">
+                            {{ lngService.contact['warn3'] }}
+                        </span>
+                        <span class="invalid-text" *ngIf="formData.get('message')?.errors?.['minlength']">
+                            {{ lngService.contact['warnRequire3'] }}
+                        </span>
                     </div>
 
                     <img *ngIf="formData.get('message')?.valid"
@@ -87,9 +91,9 @@
                         <input formControlName="checkbox" type="checkbox" checked="checked" required>
                         <span class="checkmark"></span>
                     </label>
-                    <p>I've read the
-                        <a class="policy-link" routerLink="privacyPolicy">privacy policy</a>
-                        and agree to the processing of my data as outlined.
+                    <p>{{ lngService.contact['policy1'] }}
+                        <a class="policy-link" routerLink="privacyPolicy">{{ lngService.contact['policy2'] }}</a>
+                        {{ lngService.contact['policy3'] }}
                     </p>
                 </div>
 
