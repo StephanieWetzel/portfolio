@@ -69,28 +69,28 @@
 
     <div class="overlay-links-container">
         <div class="link">
-            <a (click)="toggleLinkStyle('aboutMe')" [class.active-link]="aboutMe" href="#aboutMe">{{
+            <a (click)="toggleLinkStyle('aboutMe'); hideOverlay()" [class.active-link]="aboutMe" href="#aboutMe">{{
                 lngService.header["aboutMe"] }} <span class="custom-underline"></span>
                 <div [class.active-underline]="aboutMe"></div>
             </a>
         </div>
 
         <div class="link">
-            <a (click)="toggleLinkStyle('skills')" [class.active-link]="skills" href="#mySkills">Skills
+            <a (click)="toggleLinkStyle('skills'); hideOverlay()" [class.active-link]="skills" href="#mySkills">Skills
                 <span class="custom-underline"></span>
                 <div [class.active-underline]="skills"></div>
             </a>
         </div>
 
         <div class="link">
-            <a (click)="toggleLinkStyle('portfolio')" [class.active-link]="portfolio" href="#myProjects">Portfolio<span
-                    class="custom-underline"></span>
+            <a (click)="toggleLinkStyle('portfolio'); hideOverlay()" [class.active-link]="portfolio"
+                href="#myProjects">Portfolio<span class="custom-underline"></span>
                 <div [class.active-underline]="portfolio"></div>
             </a>
         </div>
 
         <div class="link">
-            <a (click)="toggleLinkStyle('contact')" [class.active-link]="contact" href="#contactMe">{{
+            <a (click)="toggleLinkStyle('contact'); hideOverlay()" [class.active-link]="contact" href="#contactMe">{{
                 lngService.header["contact"] }}<span class="custom-underline"></span>
                 <div [class.active-underline]="contact"></div>
             </a>

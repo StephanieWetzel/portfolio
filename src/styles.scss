@@ -1,5 +1,6 @@
 * {
     color: white;
+
 }
 
 html,
@@ -9,6 +10,23 @@ body {
     scroll-behavior: smooth;
     overflow-x: clip;
     background-color: #141D2F;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #9747FF;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #70E61C;
+    border-radius: 10px;
 }
 
 
