@@ -3,6 +3,8 @@
     background-color: #141D2F;
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
+    position: relative;
 }
 
 .bottom-form {
@@ -175,7 +177,7 @@
 
 
 // media queries
-@media(min-width: 1100px) and (max-width: 1450px) {
+@media(min-width: 1100px) and (max-width: 1440px) {
     .intro-container {
         top: 256px;
         right: 76px;
@@ -536,22 +538,6 @@
 }
 
 @media(min-height: 725px) and (max-height: 750px) {
-    .main-container {
-        margin-bottom: 72px;
-    }
-
-    .intro-container {
-        top: 544px;
-    }
-
-    .platforms-container {
-        bottom: 0;
-    }
-
-    .contact-me-link {
-        top: 8px;
-    }
-
     .bottom-form {
         height: 672px;
     }
