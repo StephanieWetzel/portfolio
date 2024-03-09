@@ -12,12 +12,6 @@ export class LanguageService {
         contact: '',
     };
 
-    // aboveTheFold: { [key: string]: string } = {
-    //     iAm: '',
-    //     frontendDev: '',
-    // };
-
-
     aboutMe: { [key: string]: string } = {
         header: '',
         p1: '',
@@ -144,7 +138,7 @@ export class LanguageService {
     constructor() {
         i18next.init({
             lng: 'en',
-            debug: true,
+            debug: false,
             resources: {
                 en: {
                     translation: {
@@ -152,10 +146,6 @@ export class LanguageService {
                             aboutMe: 'About me',
                             contact: 'Contact',
                         },
-                        // aboveTheFold: {
-                        //     iAm: 'I am',
-                        //     frontendDev: 'FRONTEND DEVELOPER',
-                        // },
                         aboutMe: {
                             header: 'About me',
                             p1: 'Hi there! I am a Frontend developer based in Gefrees, Germany. Since the age of 17 I have gained valuable experiences in my work as well as in further educations, but my fascination for the world of programming has always been at the forefront of my mind. This is why, in early 2023, I decided to quit thinking and start doing by signing up for a boot camp at the Developer Akademie in Munich - it was time to turn my visions into reality!',

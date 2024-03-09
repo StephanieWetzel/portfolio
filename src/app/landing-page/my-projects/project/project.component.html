@@ -1,8 +1,7 @@
-<div class="main-container" [ngStyle]="{'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'}"
-    [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'">
+<div class="main-container" [ngStyle]="{'flex-direction': i % 2 === 0 ? 'row' : 'row-reverse'}">
     <img [attr.data-aos]="i % 2 === 0 ? 'flip-left' : 'flip-right'" src={{imgPath}}>
 
-    <div>
+    <div [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'" data-aos-delay="200">
         <h3>{{name}}</h3>
         <span>{{language}}</span>
         <p>{{description}}</p>

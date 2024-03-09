@@ -60,9 +60,4 @@ export class ContactMeComponent {
         });
     }
   }
-
-
-  openPolicy() {
-
-  }
 }
