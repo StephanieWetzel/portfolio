@@ -7,7 +7,8 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { MyProjectsComponent } from './my-projects/my-projects.component';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { FooterComponent } from './footer/footer.component';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-landing-page',
@@ -27,4 +28,10 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class LandingPageComponent {
 
+  ngOnInit() {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }
 }
