@@ -8,14 +8,15 @@ h2 {
     padding: 200px 0;
     box-sizing: border-box;
     position: relative;
-    max-width: 1440px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    gap: 56px;
+    gap: 32px;
 }
 
 .custom-line {
@@ -303,5 +304,6 @@ button {
     .go-up {
         z-index: 1;
         right: 32px;
+        bottom: 40px;
     }
 }
