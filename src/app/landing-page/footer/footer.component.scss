@@ -1,12 +1,18 @@
+.bg-100 {
+    border-top: 4px solid #70E61C;
+    background-color: #141D2F;
+    width: 100%;
+}
+
 .main-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    border-top: 4px solid #70E61C;
-    background-color: #141D2F;
     height: 276px;
     padding: 0 104px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .name {

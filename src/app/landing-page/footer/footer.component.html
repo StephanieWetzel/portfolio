@@ -1,34 +1,36 @@
-<div class="main-container">
-    <div>
-        <a href="#header">
-            <div class="name">
-                <span>Step</span>
-                <span class="custom-h">h</span>
-                <span>an</span>
-                <span class="custom-i">i</span>
-                <span>e</span>
-            </div>
-        </a>
+<div class="bg-100">
+    <div class="main-container">
+        <div>
+            <a href="#header">
+                <div class="name">
+                    <span>Step</span>
+                    <span class="custom-h">h</span>
+                    <span>an</span>
+                    <span class="custom-i">i</span>
+                    <span>e</span>
+                </div>
+            </a>
 
-        <a class="imprint-link" routerLink="imprint">
-            {{ lngService.footer["imprint"]}}
-        </a>
+            <a class="imprint-link" routerLink="imprint">
+                {{ lngService.footer["imprint"]}}
+            </a>
 
+        </div>
+
+        <span class="copyright-claim">© Stephanie Wetzel 2024</span>
+
+        <div class="platforms-container">
+            <a class="platform-scale" href="https://github.com/StephanieWetzel" target="_blank">
+                <img src="assets/img/github.png" alt="github">
+            </a>
+            <a class="platform-scale" href="mailto:st.wetzel96@hotmail.com">
+                <img src="assets/img/mail.png" alt="mail">
+            </a>
+            <a class="platform-scale" href="https://www.linkedin.com/in/stephanie-wetzel-6231842b9/" target="_blank">
+                <img src="assets/img/linkedin.png" alt="linkedin">
+            </a>
+        </div>
+
+        <a class="mobile-imprint-link" routerLink="imprint">{{ lngService.footer["imprint"]}}</a>
     </div>
-
-    <span class="copyright-claim">© Stephanie Wetzel 2024</span>
-
-    <div class="platforms-container">
-        <a class="platform-scale" href="https://github.com/StephanieWetzel" target="_blank">
-            <img src="assets/img/github.png" alt="github">
-        </a>
-        <a class="platform-scale" href="mailto:st.wetzel96@hotmail.com">
-            <img src="assets/img/mail.png" alt="mail">
-        </a>
-        <a class="platform-scale" href="https://www.linkedin.com/in/stephanie-wetzel-6231842b9/" target="_blank">
-            <img src="assets/img/linkedin.png" alt="linkedin">
-        </a>
-    </div>
-
-    <a class="mobile-imprint-link" routerLink="imprint">{{ lngService.footer["imprint"]}}</a>
 </div>

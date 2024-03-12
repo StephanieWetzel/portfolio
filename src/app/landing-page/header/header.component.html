@@ -1,56 +1,58 @@
-<nav class="main-container">
-    <a href="#">
-        <div class="name">
-            <span>Step</span>
-            <span class="custom-h">h</span>
-            <span>an</span>
-            <span class="custom-i">i</span>
-            <span>e</span>
-        </div>
-    </a>
+<div class="navbar-bg">
+    <nav class="main-container">
+        <a href="#">
+            <div class="name">
+                <span>Step</span>
+                <span class="custom-h">h</span>
+                <span>an</span>
+                <span class="custom-i">i</span>
+                <span>e</span>
+            </div>
+        </a>
 
-    <div class="links-container">
-        <div class="link">
-            <a (click)="toggleLinkStyle('aboutMe')" [class.active-link]="aboutMe"
-                href="#aboutMe">{{lngService.header["aboutMe"] }}
-                <span class="custom-underline"></span>
-            </a>
-            <div [class.active-underline]="aboutMe"></div>
-        </div>
-
-        <div class="link">
-            <a (click)="toggleLinkStyle('skills')" [class.active-link]="skills" href="#mySkills">Skills
-                <span class="custom-underline"></span>
-            </a>
-            <div [class.active-underline]="skills"></div>
-        </div>
-
-        <div class="link">
-            <a (click)="toggleLinkStyle('portfolio')" [class.active-link]="portfolio" href="#myProjects">Portfolio
-                <span class="custom-underline"></span>
-            </a>
-            <div [class.active-underline]="portfolio"></div>
-        </div>
-
-        <!-- toggle language -->
-        <div class="language-container toggle-display">
-            <div class="de-container">
-                <p (click)="changeLang('de')" [class.active-link]="isGerLang">DE</p>
-                <span class="custom-underline"></span>
-                <div [class.active-language-underline]="isGerLang"></div>
+        <div class="links-container">
+            <div class="link">
+                <a (click)="toggleLinkStyle('aboutMe')" [class.active-link]="aboutMe"
+                    href="#aboutMe">{{lngService.header["aboutMe"] }}
+                    <span class="custom-underline"></span>
+                </a>
+                <div [class.active-underline]="aboutMe"></div>
             </div>
 
-            <div class="separator"></div>
-
-            <div class="en-container">
-                <p (click)="changeLang('en')" [class.active-link]="isEnLang">EN</p>
-                <span class="custom-underline"></span>
-                <div [class.active-language-underline]="isEnLang"></div>
+            <div class="link">
+                <a (click)="toggleLinkStyle('skills')" [class.active-link]="skills" href="#mySkills">Skills
+                    <span class="custom-underline"></span>
+                </a>
+                <div [class.active-underline]="skills"></div>
             </div>
+
+            <div class="link">
+                <a (click)="toggleLinkStyle('portfolio')" [class.active-link]="portfolio" href="#myProjects">Portfolio
+                    <span class="custom-underline"></span>
+                </a>
+                <div [class.active-underline]="portfolio"></div>
+            </div>
+
+            <!-- toggle language -->
+            <div class="language-container toggle-display">
+                <div class="de-container">
+                    <p (click)="changeLang('de')" [class.active-link]="isGerLang">DE</p>
+                    <span class="custom-underline"></span>
+                    <div [class.active-language-underline]="isGerLang"></div>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="en-container">
+                    <p (click)="changeLang('en')" [class.active-link]="isEnLang">EN</p>
+                    <span class="custom-underline"></span>
+                    <div [class.active-language-underline]="isEnLang"></div>
+                </div>
+            </div>
+            <div (click)="showOverlay()" class="burger-menu-container"></div>
         </div>
-        <div (click)="showOverlay()" class="burger-menu-container"></div>
-    </div>
-</nav>
+    </nav>
+</div>
 
 <!-- OVERLAY -->
 <nav #overlayContainer class="overlay-container">
