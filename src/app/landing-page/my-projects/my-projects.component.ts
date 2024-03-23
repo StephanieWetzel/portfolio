@@ -29,16 +29,26 @@ export class MyProjectsComponent {
     github: string;
   }[] = [{
     "id": 1,
+    "imgPath": "assets/img/coming_soon.png",
+    "name": "DA Bubble",
+    "language": "Angular | TypeScript | Firebase | HTML | SCSS",
+    "descriptionEN": "Chat messenger inspired by Slack. Stay in contact with colleagues, keep up to date, and share thoughts and ideas.",
+    "descriptionGER": "Chat-Messenger inspiriert von Slack. Halten Sie Kontakt zu Ihren Kollegen, bleiben Sie auf dem neuesten Stand und teilen Sie Gedanken und Ideen.",
+    "live": "",
+    "github": ""
+  },
+  {
+    "id": 2,
     "imgPath": "assets/img/projects_join.png",
     "name": "Join",
     "language": "JavaScript | HTML | CSS",
     "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users & categories.",
-    "descriptionGER": "Ein Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzer & Kategorien zu.",
+    "descriptionGER": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzer & Kategorien zu.",
     "live": "https://stephanie-wetzel.com/join/login_index.html",
     "github": "https://github.com/StephanieWetzel/Join"
   },
   {
-    "id": 2,
+    "id": 3,
     "imgPath": "assets/img/projects_sharkie.png",
     "name": "Sharkie",
     "language": "JavaScript | HTML | CSS",
@@ -48,7 +58,7 @@ export class MyProjectsComponent {
     "github": "https://github.com/StephanieWetzel/sharkie"
   },
   {
-    "id": 3,
+    "id": 4,
     "imgPath": "assets/img/projects_pokedex.png",
     "name": "Pokédex",
     "language": "JavaScript | HTML | CSS | Api",
@@ -56,16 +66,6 @@ export class MyProjectsComponent {
     "descriptionGER": "Basierend auf der PokéAPI - eine einfache Bibliothek, die Informationen über Pokémon bereitstellt und katalogisiert.",
     "live": "https://stephanie-wetzel.com/pokedex/index.html",
     "github": "https://github.com/StephanieWetzel/pokedex"
-  },
-  {
-    "id": 4,
-    "imgPath": "assets/img/coming_soon.png",
-    "name": "Simple CRM",
-    "language": "Angular | Firebase",
-    "descriptionEN": "A very Simple Customer Relationship Management system working with CRUD functionality.",
-    "descriptionGER": "Ein sehr Simples Kundenbeziehungsmanagement-System mit CRUD-Funktionalität.",
-    "live": "",
-    "github": ""
   }
     ];
 }
