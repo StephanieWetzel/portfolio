@@ -271,10 +271,6 @@ export class LanguageService {
                             aboutMe: 'Über mich',
                             contact: 'Kontakt',
                         },
-                        // aboveTheFold: {
-                        //     iAm: 'Ich bin',
-                        //     frontendDev: 'FRONTEND ENTWICKLER',
-                        // },
                         aboutMe: {
                             header: 'Über mich',
                             p1: 'Hallo! Ich bin Frontend Entwickler und wohnhaft in Gefrees, Deutschland. Seit meinem 17. Lebensjahr konnte ich Erfahrungen in verschiedensten Bereichen sammeln – sowohl beruflich als auch durch schulische Weiterbildungen. Meine Faszination für die Welt des Programmierens hat mich dabei stets begleitet und so beschloss ich im Frühjahr 2023 vom Denker zum Macher zu werden, indem ich mich für die Weiterbildung der Developer Akademie in München anmeldete. Es war an der Zeit, meine Visionen in die Realität umzusetzen!',
