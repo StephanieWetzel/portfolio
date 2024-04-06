@@ -35,7 +35,7 @@ export class MyProjectsComponent {
     "descriptionEN": "Chat messenger inspired by Slack. Stay in contact with colleagues, keep up to date, and share thoughts and ideas.",
     "descriptionGER": "Chat-Messenger inspiriert von Slack. Halten Sie Kontakt zu Ihren Kollegen, bleiben Sie auf dem neuesten Stand und teilen Sie Gedanken und Ideen.",
     "live": "",
-    "github": ""
+    "github": "https://github.com/StephanieWetzel/DABubble"
   },
   {
     "id": 2,
