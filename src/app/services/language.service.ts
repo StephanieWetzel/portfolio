@@ -148,9 +148,9 @@ export class LanguageService {
                         },
                         aboutMe: {
                             header: 'About me',
-                            p1: 'Hi there! I am a Frontend Developer based in Gefrees, Germany. Since the age of 17 I have gained valuable experiences in my work as well as in further educations. However, my fascination for the world of programming has always been at the forefront of my mind. This is why, in early 2023, I decided to quit thinking and start doing by signing up for professional training at the Developer Akademie in Munich - it was time to turn my visions into reality!',
-                            p2: 'Through the academy´s practical-oriented approach, I continuously improved my programming skills by crafting various web apps and websites - both independently and as part of a team. The challenges I faced during this time became my source of motivation, and every experience of success further fueled my passion for this field.',
-                            p3: 'Working in the textile industry from 2021 to 2024 has greatly influenced my organization skills, as it involved managing diverse inputs daily - such as color, size, material and textile types. This experience has equipped me with the systematic approach necessary for handling complex projects.',
+                            p1: 'Hi there! I am a Frontend Developer with solid experience in Angular and JavaScript. In early 2023, I decided to turn my fascination for programming into a profession by enrolling in training at the Developer Akademie in Munich. It was time to turn my visions into reality!',
+                            p2: 'I continuously improved my programming skills by developing various web apps and websites, both independently and as part of a team. In total, I completed more than 10 projects during my time at the Developer Akademie.',
+                            p3: 'My experience in the textile industry from 2021 to 2024 equipped me with the systematic approach necessary for managing complex projects with diverse inputs.',
                         },
                         skills: {
                             header: 'My skills',
@@ -273,9 +273,9 @@ export class LanguageService {
                         },
                         aboutMe: {
                             header: 'Über mich',
-                            p1: 'Hallo! Ich bin Frontend Entwicklerin und wohnhaft in Gefrees, Deutschland. Seit meinem 17. Lebensjahr konnte ich Erfahrungen in verschiedensten Bereichen sammeln – sowohl beruflich als auch durch schulische Weiterbildungen. Meine Faszination für die Welt des Programmierens hat mich dabei stets begleitet und so beschloss ich im Frühjahr 2023 vom Denker zum Macher zu werden, indem ich mich für die Weiterbildung der Developer Akademie in München angemeldet habe. Es war an der Zeit, meine Visionen in die Realität umzusetzen!',
-                            p2: 'Durch die praxisorientierte Herangehensweise der Akademie habe ich kontinuierlich meine Programmierkenntnisse verbessert, indem ich verschiedene Webanwendungen und Websites entwickelte – sowohl eigenständig, als auch im Team. Die Herausforderungen, denen ich in dieser Zeit gegenüberstand, wurden zu meiner Motivation und jedes Erfolgserlebnis hat meine Leidenschaft für dieses Gebiet weiter entfacht.',
-                            p3: 'Von 2021 bis 2024 war ich in der Textilindustrie tätig, was meine Organisationsfähigkeit maßgeblich beeinflusst hat. Dort stand das Managen von diversen Inputs an der Tagesordnung  - dazu gehörten beispielsweise Farbe, Größe, Material und Textiltyp. Diese Erfahrung hat mir eine systematische Herangehensweise vermittelt, welche für die Bewältigung von komplexen Projekten notwendig ist.',
+                            p1: 'Hallo! Ich bin Frontend Entwicklerin mit fundierten Kenntnissen in Angular und JavaScript. Anfang 2023 habe ich beschlossen, meine Faszination für das Programmieren zum Beruf zu machen, indem ich mich für die Weiterbildung der Developer Akademie in München angemeldet habe. Es war Zeit, meine Visionen in die Realität umzusetzen!',
+                            p2: 'Ich habe meine Programmierkenntnisse kontinuierlich verbessert, indem ich sowohl selbstständig als auch im Team verschiedene Web-Apps und Websites entwickelt habe. Insgesamt habe ich während meiner Zeit bei der Developer Akademie mehr als 10 Projekte gebaut.',
+                            p3: 'Meine Erfahrung in der Textilindustrie von 2021 bis 2024 hat mir den systematischen Ansatz vermittelt, der für das Managen komplexer Projekte mit verschiedenen Inputs erforderlich ist.',
                         },
                         skills: {
                             header: 'Meine Skills',
