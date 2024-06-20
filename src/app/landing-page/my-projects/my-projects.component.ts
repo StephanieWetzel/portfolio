@@ -45,7 +45,7 @@ export class MyProjectsComponent {
     "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users & categories.",
     "descriptionGER": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzer & Kategorien zu.",
     "live": "https://stephanie-wetzel.com/join/login_index.html",
-    "github": "https://github.com/StephanieWetzel/Join"
+    "github": "https://github.com/StephanieWetzel/Join_solo"
   },
   {
     "id": 3,
