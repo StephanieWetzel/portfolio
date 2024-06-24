@@ -1,11 +1,15 @@
+app-project {
+    width: 100%;
+}
+
 .main-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 104px 104px 0 104px;
+    padding-top: 104px;
     gap: 80px;
     position: relative;
     z-index: 1;
+    justify-content: space-between;
 
     >img {
         width: 448px;
@@ -54,13 +58,34 @@ a {
 
 
 // media queries
-
 @media(min-width: 320px) and (max-width: 1100px) {
     .main-container {
         flex-direction: column !important;
         gap: 48px;
         padding: 32px 0;
+    }
+}
 
+@media(min-width: 900px) {
+    .main-container {
+        >img {
+            width: 448px;
+            height: 304px;
+        }
+    }
+}
+
+@media(min-width: 500px) and (max-width: 900px) {
+    .main-container {
+        >img {
+            width: 400px;
+            height: 280px;
+        }
+    }
+}
+
+@media(min-width: 320px) and (max-width: 500px) {
+    .main-container {
         >img {
             width: 264px;
             height: 184px;
@@ -69,42 +94,9 @@ a {
 
     a {
         padding: 12px 14px;
-        font-size: 22px;
+        font-size: 18px;
     }
 }
-
-@media(min-width: 500px) {
-    .main-container {
-
-        >img {
-            width: 400px;
-            height: 280px;
-        }
-    }
-}
-
-@media(min-width: 900px) {
-    .main-container {
-        padding-left: 104px;
-        padding-right: 104px;
-
-        >img {
-            width: 480px;
-            height: 320px;
-        }
-    }
-}
-
-@media(min-width: 1100px) and (max-width: 1200px) {
-    .main-container {
-
-        >img {
-            width: 448px;
-            height: 304px;
-        }
-    }
-}
-
 
 // FOR MOBILE
 // @media(min-height: 600px) {

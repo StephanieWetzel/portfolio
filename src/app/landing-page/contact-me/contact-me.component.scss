@@ -5,8 +5,7 @@ h2 {
 }
 
 .main-container {
-    padding: 200px 0;
-    box-sizing: border-box;
+    padding: 200px 104px;
     position: relative;
     max-width: 1920px;
     margin: 0 auto;
@@ -32,7 +31,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     gap: 80px;
-    padding: 0 104px;
     box-sizing: border-box;
 
     >div {

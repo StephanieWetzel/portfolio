@@ -8,8 +8,9 @@ h2 {
 .main-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     padding-top: 160px;
+    padding: 160px 104px 0 104px;
     position: relative;
     gap: 32px;
     max-width: 1920px;
@@ -18,11 +19,13 @@ h2 {
     >div {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     >span {
         font-size: 18px;
         margin-top: 32px;
+        text-align: center;
     }
 }
 
@@ -59,6 +62,24 @@ h2 {
 
 // media queries
 
+@media(min-width: 1920px) {
+    .main-container {
+        >div {
+            justify-content: flex-end;
+            gap: 24px;
+        }
+    }
+
+    .long-line {
+        width: 38%;
+        position: relative;
+    }
+
+    h2 {
+        padding: 0;
+    }
+}
+
 @media(min-width: 320px) and (max-width: 900px) {
     h2 {
         font-size: 48px;
@@ -67,10 +88,6 @@ h2 {
 
     .short-line {
         width: 24px;
-    }
-
-    .long-line {
-        width: 16%;
     }
 
     .main-container {
@@ -95,9 +112,41 @@ h2 {
     }
 }
 
-@media(min-width: 500px) {
+
+
+@media(min-width: 1700px) and (max-width: 1920px) {
+    .long-line {
+        width: 36%;
+    }
+}
+
+@media(min-width: 1500px) and (max-width: 1700px) {
+    .long-line {
+        width: 34%;
+    }
+}
+
+@media(min-width: 1300px) and (max-width: 1500px) {
+    .long-line {
+        width: 32%;
+    }
+}
+
+@media(min-width: 1100px) and (max-width: 1300px) {
+    .long-line {
+        width: 30%;
+    }
+}
+
+@media(min-width: 1000px) and (max-width: 1100px) {
     .long-line {
         width: 28%;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1000px) {
+    .long-line {
+        width: 26%;
     }
 }
 
@@ -105,15 +154,29 @@ h2 {
     h2 {
         font-size: 64px;
     }
+}
 
+@media(min-width: 600px) and (max-width: 900px) {
     .long-line {
-        width: 24%;
+        width: 32%;
     }
 }
 
-@media(min-width: 1100px) and (max-width: 1200px) {
+@media(min-width: 500px) and (max-width: 600px) {
     .long-line {
-        width: 26%;
+        width: 28%;
+    }
+}
+
+@media(min-width: 400px) and (max-width: 500px) {
+    .long-line {
+        width: 22%;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 400px) {
+    .long-line {
+        width: 16%;
     }
 }
 
