@@ -25,6 +25,8 @@ h2 {
     background-color: #9747FF;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
+    position: absolute;
+    left: 0;
 }
 
 .contact-container {
@@ -123,7 +125,7 @@ button {
     padding: 14px 32px;
     border-radius: 10px;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .green-button {
@@ -254,10 +256,9 @@ button {
 
 
 // media queries
-
-@media(max-width: 900px) {
-    button {
-        font-size: 20px;
+@media(min-width: 1920px) {
+    .custom-line {
+        position: relative;
     }
 }
 
@@ -276,6 +277,7 @@ button {
 
     .custom-line {
         width: 24px;
+        position: relative;
     }
 
     .contact-container {
@@ -286,10 +288,6 @@ button {
         >div {
             margin-top: 0;
         }
-    }
-
-    button {
-        font-size: 20px;
     }
 
     .shadow {
