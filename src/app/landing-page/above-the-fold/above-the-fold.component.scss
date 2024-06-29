@@ -1,8 +1,5 @@
 .main-container {
-    // height: 100vh;
     background-color: #141D2F;
-    // display: flex;
-    // justify-content: space-between;
     max-width: 1920px;
     margin: 0 auto;
     position: relative;
@@ -93,7 +90,6 @@
     align-items: center;
     position: absolute;
     gap: 40px;
-    // bottom: 16px;
     bottom: 96px;
     z-index: 6;
 
@@ -194,7 +190,6 @@
 
     .intro-container {
         top: 256px;
-        // right: 76px;
 
         .frontend-container {
             .name {
@@ -217,7 +212,6 @@
     }
 }
 
-
 @media(min-width: 1000px) and (max-width: 1200px) {
     .me {
         width: 400px;
@@ -227,8 +221,6 @@
 
     .intro-container {
         top: 208px;
-        // right: 76px;
-        // right: 104px;
 
         .frontend-container {
             align-items: flex-start;
@@ -265,13 +257,8 @@
     }
 }
 
-
 @media(min-width: 900px) and (max-width: 1000px) {
     .me {
-        // width: 512px;
-        // left: 24px;
-        // top: 24px;
-
         width: 448px;
         top: 56px;
         left: 64px;
@@ -319,10 +306,6 @@
 
 @media(min-width: 800px) and (max-width: 900px) {
     .me {
-        // width: 512px;
-        // left: 24px;
-        // top: 24px;
-
         width: 448px;
         top: 56px;
         left: 64px;
@@ -620,7 +603,6 @@
         width: 112px;
     }
 }
-
 
 @media(min-width: 320px) and (max-width: 360px) {
     .me {
