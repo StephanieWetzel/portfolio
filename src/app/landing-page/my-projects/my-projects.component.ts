@@ -29,13 +29,13 @@ export class MyProjectsComponent {
     github: string;
   }[] = [{
     "id": 1,
-    "imgPath": "assets/img/coming_soon.png",
+    "imgPath": "assets/img/projects_dabubble.png",
     "name": "DABubble",
     "language": "Angular | TypeScript | Firebase | HTML | SCSS",
     "descriptionEN": "Chat messenger inspired by Slack. Stay in contact with colleagues, keep up to date, and share thoughts and ideas.",
     "descriptionGER": "Chat-Messenger inspiriert von Slack. Halten Sie Kontakt zu Ihren Kollegen, bleiben Sie auf dem neuesten Stand und teilen Sie Gedanken und Ideen.",
-    "live": "",
-    "github": "https://github.com/StephanieWetzel/DABubble_solo.git"
+    "live": "https://da-bubble.stephanie-wetzel.com/",
+    "github": "https://github.com/StephanieWetzel/DABubble.git"
   },
   {
     "id": 2,
@@ -45,7 +45,7 @@ export class MyProjectsComponent {
     "descriptionEN": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users & categories.",
     "descriptionGER": "Task-Manager, inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mithilfe von Drag-and-Drop-Funktionen und weisen Sie Benutzer & Kategorien zu.",
     "live": "https://join.stephanie-wetzel.com/login_index.html",
-    "github": "https://github.com/StephanieWetzel/Join_solo.git"
+    "github": "https://github.com/StephanieWetzel/Join.git"
   },
   {
     "id": 3,
